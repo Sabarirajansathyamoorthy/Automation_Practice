@@ -1,0 +1,23 @@
+
+WebElemnt table = driver.findElement(By.xpath(""));
+
+List<WebElement> rows = table.findElements(By.xpath(""));
+
+List<Map<String,String>> tableData = new ArrayList<>();
+
+for(WebElement row:rows){
+List<WebElement> cols = row.findElements(By.xpath())
+;
+
+Map<String,String> record = new LinkedHashMap<>();
+record.put("Name",cols.get(0).getText());
+record.put("Age",cols.get(1).getText());
+
+tableData.add(record);
+
+}
+
+for(Map<String,String> user : tableData){
+
+user.get("Name");
+}
